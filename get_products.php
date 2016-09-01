@@ -12,6 +12,7 @@ session_start();
         $products = $sc->call('GET', '/admin/products.json', array('published_status'=>'published'));
         echo "<pre>";
         print_r($products);
+		echo "</pre>";
 
         // Create a new recurring charge
         $charge = array
